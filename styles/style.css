@@ -1,0 +1,51 @@
+.html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(27, 27, 101);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: rgb(253, 253, 118);
+}
+
+.gridnumbutton {
+    background-color: rgb(27, 27, 101);
+    color: rgb(253, 253, 118);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.gridcontainer {
+    display: flex;
+    width: 960px;
+    height: 960px;
+    border: 1px solid white;
+}
+
+.gridcontainer > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.gridcontainer > div > div {
+    flex: 1;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.gridcontainer > div > div:hover {
+    background-color: gray;
+}
+
