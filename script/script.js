@@ -29,8 +29,11 @@ function getGridNum (num) {
 
         for (let i = 0; i < num; i++) {
             let grid = document.createElement('div');
-            grid.classList.add(i);
+            grid.classList.add('grid');
             gridColumn.appendChild(grid);
+            grid.addEventListener('mouseover', () => {
+                grid.setAttribute("style", "background-color:black;");
+            })
         }
     }
 }

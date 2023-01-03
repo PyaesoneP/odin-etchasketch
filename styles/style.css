@@ -39,13 +39,9 @@ h1 {
     flex: 1;
 }
 
-.gridcontainer > div > div {
+.grid {
     flex: 1;
     background-color: white;
     border: 1px solid black;
-}
-
-.gridcontainer > div > div:hover {
-    background-color: gray;
 }
 
