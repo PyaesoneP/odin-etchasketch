@@ -32,7 +32,10 @@ function getGridNum (num) {
             grid.classList.add('grid');
             gridColumn.appendChild(grid);
             grid.addEventListener('mouseover', () => {
-                grid.setAttribute("style", "background-color:black;");
+                grid.style.backgroundColor = generateRandomColor();
+            })
+            grid.addEventListener('mouseover', () => {
+                grid.style.filter = 'brightness(70%);';
             })
         }
     }
@@ -42,4 +45,11 @@ function resetGrid () {
     while (gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.firstChild);
     }
+}
+
+
+function generateRandomColor () {
+    let array = ['red', 'blue', 'green', 'pink', 'cyan', 'yellow', 'purple', 'orange', 'magenta'];
+    let color = array[Math.floor(Math.random()*9)];
+    return color;
 }
