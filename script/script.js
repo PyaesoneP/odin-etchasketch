@@ -3,7 +3,7 @@ const gridContainer = document.querySelector('.gridcontainer');
 
 const gridNumButton = document.createElement('BUTTON');
 gridNumButton.classList.add('gridnumbutton');
-gridNumButton.textContent = 'Numbers of grid';
+gridNumButton.textContent = 'Numbers of grids';
 let gridNumber = 16;
 
 let grid = document.createElement('div');
@@ -37,7 +37,7 @@ function getGridNum (num) {
             grid.classList.add('grid');
             gridColumn.appendChild(grid);
             grid.style.filter = 'brightness(100%)';
-            grid.addEventListener('mouseover', (event) => {
+            grid.addEventListener('pointerover', (event) => {
                 if (event.buttons === 1) {
                     grid.style.backgroundColor = generateRandomColor();
                     switch (grid.style.filter) {
@@ -86,7 +86,7 @@ function getGridNum (num) {
                     }
                 }
             })
-            grid.addEventListener('mousedown', (event) => {
+            grid.addEventListener('pointerdown', (event) => {
                 if (event.buttons === 1) {
                     grid.style.backgroundColor = generateRandomColor();
                     switch (grid.style.filter) {
