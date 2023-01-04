@@ -37,51 +37,53 @@ function getGridNum (num) {
             grid.classList.add('grid');
             gridColumn.appendChild(grid);
             grid.style.filter = 'brightness(100%)';
-            grid.addEventListener('mouseover', () => {
-                grid.style.backgroundColor = generateRandomColor();
-                switch (grid.style.filter) {
-                    case 'brightness(100%)':
-                        grid.style.filter = 'brightness(90%)';
-                        break;
+            grid.addEventListener('mouseover', (event) => {
+                if (event.buttons === 1) {
+                    grid.style.backgroundColor = generateRandomColor();
+                    switch (grid.style.filter) {
+                        case 'brightness(100%)':
+                            grid.style.filter = 'brightness(90%)';
+                            break;
             
-                    case 'brightness(90%)':
-                        grid.style.filter = 'brightness(80%)';
-                        break;
+                        case 'brightness(90%)':
+                            grid.style.filter = 'brightness(80%)';
+                            break;
             
-                    case 'brightness(80%)':
-                        grid.style.filter = 'brightness(70%)';
-                        break;
+                        case 'brightness(80%)':
+                            grid.style.filter = 'brightness(70%)';
+                            break;
             
-                    case 'brightness(70%)':
-                        grid.style.filter = 'brightness(60%)';
-                        break;
+                        case 'brightness(70%)':
+                            grid.style.filter = 'brightness(60%)';
+                            break;
             
-                    case 'brightness(60%)':
-                        grid.style.filter = 'brightness(50%)';
-                        break;
+                        case 'brightness(60%)':
+                            grid.style.filter = 'brightness(50%)';
+                            break;
 
-                    case 'brightness(50%)':
-                        grid.style.filter = 'brightness(40%)';
-                        break;
+                        case 'brightness(50%)':
+                            grid.style.filter = 'brightness(40%)';
+                            break;
 
-                    case 'brightness(40%)':
-                        grid.style.filter = 'brightness(30%)';
-                        break;
+                        case 'brightness(40%)':
+                            grid.style.filter = 'brightness(30%)';
+                            break;
 
-                    case 'brightness(30%)':
-                        grid.style.filter = 'brightness(20%)';
-                        break;
+                        case 'brightness(30%)':
+                            grid.style.filter = 'brightness(20%)';
+                            break;
 
-                    case 'brightness(20%)':
-                        grid.style.filter = 'brightness(10%)';
-                        break;
+                        case 'brightness(20%)':
+                            grid.style.filter = 'brightness(10%)';
+                            break;
 
-                    case 'brightness(10%)':
-                        grid.style.filter = 'brightness(0%)';
-                        break;
+                        case 'brightness(10%)':
+                            grid.style.filter = 'brightness(0%)';
+                            break;
             
-                    default:
-                        break;
+                        default:
+                            break;
+                    }
                 }
             })
         }
