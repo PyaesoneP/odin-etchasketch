@@ -14,12 +14,17 @@ let gridColumn = document.createElement('div');
 gridColumn.classList.add('gridcolumn');
 
 gridNumButton.addEventListener('click', () => {
-    gridNumber = prompt('Choose the number of grids that you would like');
+    gridNumber = prompt('Choose the number of grids that you would like. (16 - 100)');
     resetGrid();
     getGridNum(gridNumber);
 })
 
 container.insertBefore(gridNumButton, gridContainer);
+
+const howTo = document.querySelector('.gotohow');
+const about = document.querySelector('.gotoabout');
+const howToSection = document.querySelector('.howtocontainer');
+const aboutSection = document.querySelector('.aboutcontainer');
 
 function getGridNum (num) {
     for (let i = 0; i < num; i++) {

@@ -7,8 +7,44 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid gray;
+}
+
+ul {
+    display: flex;
+    width: 90%;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+}
+
+li {
     color: rgb(253, 253, 118);
+}
+
+#logo {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+a {
+    font-size: 18px;
+    color: rgb(253, 253, 118);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
 }
 
 .gridnumbutton {
@@ -45,3 +81,55 @@ h1 {
     border: 1px solid black;
 }
 
+.howto {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 100px;
+    margin-top: 50px;
+}
+
+.howtocontainer {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.heroheader {
+    color: rgb(253, 253, 118);
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.about {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.aboutcontainer {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.aboutheader {
+    color: rgb(253, 253, 118);
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: end;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer > p {
+    color: white;
+    font-size: 10px;
+    font-weight: lighter;
+}
